@@ -5,10 +5,8 @@
   border-radius: 15px;
   margin: 20px auto;
   background:linear-gradient(50deg,blue, red, green);
-
 }
 .app-wrapper {
-
   padding:5px;
   width: 1200px;
   margin: 20px auto;
@@ -21,40 +19,3 @@
   grid-gap: 10px;
 }
 
-.header {
-  grid-area: head;
-  background-color: aquamarine;
-
-}
-
-.nav {
-  grid-area: navi;
-  background-color: blueviolet;
-
-}
-
-.content {
-  grid-area: cont;
-  background-color: chartreuse;
-  display: flex;
-  flex-direction: column;
-
-}
-
-.content img {
-  width: 990px;
-
-}
-
-.header img {
-  width: 50px;
-}
-
-.bodyHeader {
-  height: 300px;
-}
-
-.contentdescription {
-  background-color: chartreuse;
-  height: 700px;
-}

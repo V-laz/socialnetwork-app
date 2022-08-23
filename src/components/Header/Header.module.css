@@ -1,0 +1,16 @@
+
+  
+  .header {
+    grid-area: head;
+    background-color: aquamarine;
+  
+  }
+
+  
+  .header img {
+    width: 50px;
+  }
+  
+  .bodyHeader {
+    height: 300px;
+  }

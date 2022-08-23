@@ -1,0 +1,15 @@
+
+
+  .content {
+    grid-area: cont;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+  }
+  .content img {
+    width: 990px;
+  }
+  .contentdescription {
+    background-color: chartreuse;
+    height: 700px;
+  }
