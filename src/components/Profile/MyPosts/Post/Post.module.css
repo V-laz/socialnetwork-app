@@ -1,0 +1,6 @@
+.item img {
+    width:120px;
+    border:2px solid red;
+    border-radius: 20px; 
+    padding:2px;
+}

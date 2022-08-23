@@ -6,10 +6,10 @@
     display: flex;
     flex-direction: column;
   }
-  .content img {
+  .bodyHeader img {
     width: 990px;
   }
   .contentdescription {
     background-color: chartreuse;
-    height: 700px;
+    
   }
