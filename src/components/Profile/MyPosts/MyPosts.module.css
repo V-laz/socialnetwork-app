@@ -1,0 +1,16 @@
+.myPosts {
+    position: relative;
+    background-color: chartreuse;
+    padding: 15px;
+  
+  }
+  .textInfo {
+    margin:10px 0 5px 0;
+    display:flex;
+    flex-direction: column;
+  }
+  .postButton {
+    width:140px;
+    height: 50px;
+    margin: 25px 0 25px 0;
+  }

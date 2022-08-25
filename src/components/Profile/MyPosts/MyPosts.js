@@ -6,17 +6,15 @@ import css from './MyPosts.module.css';
 const MyPosts = () => {
   return (
 
-    <div>
+    <div className={css.myPosts}>
       My post
-      <div>
+      <div className={css.textInfo}>
         <textarea></textarea>
-        <button>Add post</button>
+        <button className={css.postButton}>Add post</button>
       </div>
       <div className={css.posts}>
         <Post message="Hi,how are you?" />
-        <Post message= "Hello,not bad!"/>
-
-
+        <Post message="Hello,not bad!" />
       </div>
     </div>
 
