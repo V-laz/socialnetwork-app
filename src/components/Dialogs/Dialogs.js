@@ -3,9 +3,10 @@ import css from './Dialogs.module.css';
 import { NavLink } from 'react-router-dom';
 
 const DialogItem = (props) => {
+  let path = "/dialogs/"+props.id;
   return (
     <div className={css.dialog}>
-    <NavLink to={"/dialogs/"+props.id}>{props.name}</NavLink>
+    <NavLink to={path}>{props.name}</NavLink>
   </div>
   )
 }
@@ -17,7 +18,7 @@ const Dialogs = () => {
 
         <DialogItem name="Gyver" id="1"/>
         <DialogItem name="Lara" id="2"/>
-        <DialogItem name="Alex" id="3"/>
+        <DialogItem name="Alex" id="33"/>
 
 
       </div>
