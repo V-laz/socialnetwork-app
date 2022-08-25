@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
 
       <div className={css.item}>
-        <NavLink to="/dialogs" className={navData => navData.isActive ? css.active : css.item}>Dialogs</NavLink>
+        <NavLink to="/dialogs" className={navData => navData.isActive ? css.active : css.item}>Messages</NavLink>
       </div>
 
       <div className={css.item}>
