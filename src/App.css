@@ -21,6 +21,7 @@
 .app-wrapper-content {
   grid-area: cont;
   background-color: chartreuse;
+  width: 990px;
   display: flex;
   flex-direction: column;
 }

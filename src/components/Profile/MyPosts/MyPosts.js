@@ -3,13 +3,14 @@ import Post from './Post/Post';
 import css from './MyPosts.module.css';
 
 
-const MyPosts = () => {
-  const postData = [
-    {id:1, message:"hi Gyver", likesCount:5},
-    {id:2, message:'what are you doing?', likesCount:8},
-    {id:3, message:"Yo man!", likesCount:12}
-    
+const MyPosts = (props) => {
+  const posts = [
+    { id: 1, message: "hi Gyver", likesCount: 5 },
+    { id: 2, message: 'what are you doing?', likesCount: 8 },
+    { id: 3, message: "Yo man!", likesCount: 12 }
+
   ]
+  let postsElements = posts.map(post => <Post message={post.message} likesCount={post.likesCount} />)
   return (
 
     <div className={css.myPosts}>
@@ -19,9 +20,7 @@ const MyPosts = () => {
         <button className={css.postButton}>Add post</button>
       </div>
       <div className={css.posts}>
-        <Post message={postData[0].message} likesCount={postData[0].likesCount} />
-        <Post message={postData[1].message} likesCount={postData[1].likesCount} />
-        <Post message={postData[2].message} likesCount={postData[2].likesCount} />
+        {postsElements}
       </div>
     </div>
 
