@@ -4,13 +4,8 @@ import css from './MyPosts.module.css';
 
 
 const MyPosts = (props) => {
-  const posts = [
-    { id: 1, message: "hi Gyver", likesCount: 5 },
-    { id: 2, message: 'what are you doing?', likesCount: 8 },
-    { id: 3, message: "Yo man!", likesCount: 12 }
 
-  ]
-  let postsElements = posts.map(post => <Post message={post.message} likesCount={post.likesCount} />)
+  let postsElements = props.posts.map(post => <Post message={post.message} likesCount={post.likesCount} />)
   return (
 
     <div className={css.myPosts}>
