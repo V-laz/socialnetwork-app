@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { addPost } from './redux/state';
-export let rerenderEntiretree = (state) => {
-    const root = ReactDOM.createRoot(document.getElementById('root'));
+import { updateNewPostText } from './redux/state';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+export let rerenderEntiretree = (state) => {   
     root.render(
         <React.StrictMode>
-            <App state={state} addPost={addPost} />
+            <App state={state} addPost={addPost} updateNewPostText={updateNewPostText}/>
         </React.StrictMode>
     );
 }
