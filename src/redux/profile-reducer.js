@@ -8,7 +8,7 @@ const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
         { id: 3, message: "Yo man!", likesCount: 12 }
 
     ],
-    newPostText: 'Write you messages'
+    newPostText: ''
 };
 
 const profileReducer = (state = initialState , action) => {
